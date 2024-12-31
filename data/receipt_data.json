@@ -1,0 +1,22 @@
+{
+    "council_number": "456",
+    "effective_date": "2024-12-01",
+    "term": "12 months",
+    "local_unit_number": "965",
+    "program": "Scouts BSA",
+    "district_name": "Tri-Star",
+    "district_number": 7,
+    "prices": {
+        "Youth Registration": 19,
+        "Youth SL Subscription": 21,
+        "Youth Transfer": 0,
+        "Adult Registration": 17,
+        "Multiple/Position Change": 0,
+        "Adult Transfer": 0,
+        "Adult SL Subscription": 0,
+        "Youth Exploring": 0,
+        "Adult Exploring": 0,
+        "Program Fee": 36
+    },
+    "expiration_date": "2025-11-30"
+}
