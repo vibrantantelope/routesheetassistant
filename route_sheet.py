@@ -7,7 +7,7 @@ def update_route_sheet_from_json(data):
     Update the route sheet based on extracted JSON data.
     """
     # Load the route sheet template
-    template_path = r"C:\Users\JohnKenny\OneDrive - Pathway to Adventure Council\Desktop\automate\assets\RouteSheetTemplateV2.xlsx"
+    template_path = r"Z:\johnv\routesheetassistant\assets\RouteSheetTemplateV2.xlsx"
     workbook = load_workbook(template_path)
     sheet = workbook.active
 
@@ -65,7 +65,7 @@ def update_route_sheet_from_json(data):
     district_name = data.get("district_name", "Unknown").replace(" ", "_")
     local_unit_number = data.get("local_unit_number", "Unknown")
     current_date = effective_date_formatted.replace("/", "-")
-    output_path = rf"C:\Users\JohnKenny\OneDrive - Pathway to Adventure Council\Desktop\automate\assets\Route_Sheet_{district_name}_{local_unit_number}_{current_date}.xlsx"
+    output_path = rf"Z:\johnv\routesheetassistant\assets\Route_Sheet_{district_name}_{local_unit_number}_{current_date}.xlsx"
     workbook.save(output_path)
     logging.info(f"Route sheet successfully updated and saved to {output_path}.")
     return output_path

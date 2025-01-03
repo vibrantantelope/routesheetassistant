@@ -6,205 +6,240 @@ from receipt_processing import extract_receipt_text_to_json
 from route_sheet import update_route_sheet_from_json
 import win32com.client
 
-
 class RouteSheetApp:
     def __init__(self):
         self.root = ctk.CTk()
         self.root.title("Route Sheet Assistant")
-        self.root.geometry("900x700")
-
-        # Set appearance
+        self.root.geometry("1000x800")
+        
+        # Set appearance mode and theme
         ctk.set_appearance_mode("system")
         ctk.set_default_color_theme("blue")
-
-        self.selected_files = []  # List of selected receipt files
-        self.generated_files = []  # List of generated route sheet files
-
+        
+        self.selected_files = []
+        self.generated_files = []
+        
+        # Configure grid layout
+        self.root.grid_columnconfigure(0, weight=1)
+        self.root.grid_rowconfigure(1, weight=1)
+        
         self.create_widgets()
-
+        
     def create_widgets(self):
-        # Main container
-        container = ctk.CTkFrame(self.root)
-        container.pack(fill="both", expand=True, padx=20, pady=20)
-
-        # Header
-        header = ctk.CTkLabel(
-            container,
-            text="Upload Image and PDF Receipts to Create Route Sheets",
-            font=ctk.CTkFont(size=24, weight="bold")
+        # Main container with padding
+        self.main_container = ctk.CTkFrame(self.root, corner_radius=15)
+        self.main_container.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+        self.main_container.grid_columnconfigure(0, weight=1)
+        
+        # Header section with modern styling
+        header_frame = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        header_frame.grid(row=0, column=0, padx=20, pady=(20, 10), sticky="ew")
+        
+        header_label = ctk.CTkLabel(
+            header_frame,
+            text="Route Sheet Assistant",
+            font=ctk.CTkFont(size=32, weight="bold"),
         )
-        header.pack(pady=20)
-
-        # Button frame for Select, Process, and Create
-        button_frame = ctk.CTkFrame(container)
-        button_frame.pack(fill="x", pady=10)
-
-        # Select Receipts Button
+        header_label.pack(pady=10)
+        
+        subtitle = ctk.CTkLabel(
+            header_frame,
+            text="Process receipts and generate route sheets efficiently",
+            font=ctk.CTkFont(size=16),
+            text_color="gray70"
+        )
+        subtitle.pack()
+        
+        # Action buttons container
+        self.button_container = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        self.button_container.grid(row=1, column=0, padx=20, pady=10, sticky="ew")
+        self.button_container.grid_columnconfigure((0, 1, 2), weight=1)
+        
+        # Modern styled buttons with icons (using Unicode characters as simple icons)
         self.select_button = ctk.CTkButton(
-            button_frame,
-            text="Select Receipts",
+            self.button_container,
+            text="📂 Select Receipts",
             command=self.select_receipts,
-            height=40
+            height=45,
+            font=ctk.CTkFont(size=15),
+            fg_color="#2D5AF0",
+            hover_color="#1E3EBF"
         )
-        self.select_button.pack(side="left", padx=10)
-
-        # Process Receipts Button
+        self.select_button.grid(row=0, column=0, padx=10, sticky="ew")
+        
         self.process_button = ctk.CTkButton(
-            button_frame,
-            text="Process Receipts",
+            self.button_container,
+            text="⚙️ Process Receipts",
             command=self.process_receipts,
-            height=40
+            height=45,
+            font=ctk.CTkFont(size=15),
+            fg_color="#14B8A6",
+            hover_color="#0E8A7D"
         )
-        self.process_button.pack(side="left", padx=10)
-
-        # Create Route Sheets Button (Green)
-        self.create_button = ctk.CTkButton(
-            button_frame,
-            text="Create Route Sheet(s)",
-            command=self.process_receipts,
-            height=40,
-            fg_color="green",
-            hover_color="dark green"
-        )
-        self.create_button.pack(side="left", padx=10)
-
-        # Status indicator
-        self.status = ctk.CTkLabel(
-            container,
-            text="No files selected",
-            text_color="gray"
-        )
-        self.status.pack(pady=5)
-
-        # Data display frame
-        self.data_frame = ctk.CTkFrame(container)
-        self.data_frame.pack(fill="both", expand=True, pady=20)
-
-        data_label = ctk.CTkLabel(
-            self.data_frame,
-            text="Processed Receipt Data and Outputs",
-            font=ctk.CTkFont(weight="bold")
-        )
-        data_label.pack(pady=10)
-
-        self.data_display = ctk.CTkTextbox(
-            self.data_frame,
-            height=300,
-            width=600
-        )
-        self.data_display.pack(pady=10, padx=20)
-
-        # Generated links container
-        self.links_frame = ctk.CTkFrame(container)
-        self.links_frame.pack(fill="x", pady=10)
-
-        # Print Button
+        self.process_button.grid(row=0, column=1, padx=10, sticky="ew")
+        
         self.print_button = ctk.CTkButton(
-            container,
-            text="Print All Route Sheets",
+            self.button_container,
+            text="🖨️ Print Route Sheets",
             command=self.print_route_sheets,
-            fg_color="blue",
-            hover_color="dark blue",
-            height=40
+            height=45,
+            font=ctk.CTkFont(size=15),
+            state="disabled",
+            fg_color="#6366F1",
+            hover_color="#4F46E5"
         )
-        self.print_button.pack(pady=10)
-        self.print_button.configure(state="disabled")  # Disabled by default
-
+        self.print_button.grid(row=0, column=2, padx=10, sticky="ew")
+        
+        # Status section with modern styling
+        self.status_frame = ctk.CTkFrame(self.main_container, height=40, fg_color="#F8FAFC")
+        self.status_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
+        
+        self.status_label = ctk.CTkLabel(
+            self.status_frame,
+            text="Ready to process receipts",
+            font=ctk.CTkFont(size=14),
+            text_color="gray60"
+        )
+        self.status_label.pack(pady=10)
+        
+        # Create tabview for data display and generated files
+        self.tabview = ctk.CTkTabview(self.main_container)
+        self.tabview.grid(row=3, column=0, padx=20, pady=10, sticky="nsew")
+        self.main_container.grid_rowconfigure(3, weight=1)
+        
+        # Add tabs
+        self.tabview.add("Processed Data")
+        self.tabview.add("Generated Files")
+        
+        # Processed data display
+        self.data_display = ctk.CTkTextbox(
+            self.tabview.tab("Processed Data"),
+            font=ctk.CTkFont(family="Courier", size=12)
+        )
+        self.data_display.pack(fill="both", expand=True, padx=10, pady=10)
+        
+        # Generated files list
+        self.files_frame = ctk.CTkScrollableFrame(
+            self.tabview.tab("Generated Files"),
+            label_text="Generated Route Sheets"
+        )
+        self.files_frame.pack(fill="both", expand=True, padx=10, pady=10)
+        
     def select_receipts(self):
         file_paths = filedialog.askopenfilenames(
             title="Select Receipt Documents",
             filetypes=[("Image and PDF Files", "*.png;*.jpg;*.jpeg;*.tiff;*.bmp;*.pdf")]
         )
-
+        
         if not file_paths:
             return
-
+            
         self.selected_files = file_paths
-        self.status.configure(
-            text=f"{len(file_paths)} file(s) selected",
-            text_color="green"
+        self.status_label.configure(
+            text=f"✅ {len(file_paths)} file(s) selected",
+            text_color="#059669"
         )
-        self.process_button.configure(state="normal")  # Enable process button
-
+        self.process_button.configure(state="normal")
+        
     def process_receipts(self):
-        self.generated_files = []  # Reset generated files list
-        self.data_display.delete("1.0", "end")  # Clear data display
-
-        for file_path in self.selected_files:
-            try:
+        self.generated_files = []
+        self.data_display.delete("1.0", "end")
+        
+        try:
+            self.status_label.configure(
+                text="⏳ Processing receipts...",
+                text_color="#2563EB"
+            )
+            self.root.update()
+            
+            for file_path in self.selected_files:
                 receipt_data = extract_receipt_text_to_json(file_path)
                 output_path = update_route_sheet_from_json(receipt_data)
                 self.generated_files.append(output_path)
-
+                
                 # Display receipt data
+                self.data_display.insert("end", f"\n=== {os.path.basename(file_path)} ===\n")
                 formatted_data = self.format_receipt_data(receipt_data)
                 self.data_display.insert("end", formatted_data + "\n")
-
-            except Exception as e:
-                messagebox.showerror("Error", f"Failed to process {os.path.basename(file_path)}: {str(e)}")
-
-        # Add clickable links for generated files
-        if self.generated_files:
-            for file in self.generated_files:
-                self.add_clickable_link(file)
-
-            self.print_button.configure(state="normal")  # Enable print button
-
-    def add_clickable_link(self, file_path):
-        """
-        Add a clickable link to the links frame for the generated route sheet.
-        """
-        short_file_name = os.path.basename(file_path)  # Abbreviate the file path
-        link_button = ctk.CTkButton(
-            self.links_frame,
-            text=f"Open {short_file_name}",
+                
+                # Add file button to generated files tab
+                self.add_file_button(output_path)
+            
+            self.status_label.configure(
+                text="✅ All receipts processed successfully",
+                text_color="#059669"
+            )
+            self.print_button.configure(state="normal")
+            
+        except Exception as e:
+            self.status_label.configure(
+                text="❌ Error processing receipts",
+                text_color="#DC2626"
+            )
+            messagebox.showerror("Error", f"Failed to process receipts: {str(e)}")
+            
+    def add_file_button(self, file_path):
+        """Add a styled button for each generated file"""
+        button_frame = ctk.CTkFrame(self.files_frame, fg_color="transparent")
+        button_frame.pack(fill="x", pady=5)
+        
+        file_button = ctk.CTkButton(
+            button_frame,
+            text=f"📄 {os.path.basename(file_path)}",
             command=lambda: webbrowser.open(file_path),
-            height=30
+            fg_color="#3B82F6",
+            hover_color="#2563EB",
+            height=35
         )
-        link_button.pack(pady=5, padx=10, side="top")
-
+        file_button.pack(side="left", fill="x", expand=True, padx=(0, 5))
+        
     def format_receipt_data(self, data):
-        """
-        Format receipt data dictionary for display in the GUI.
-        """
-        formatted_data = "\n".join([f"{key}: {value}" for key, value in data.items()])
-        return formatted_data
-
+        """Format receipt data for display"""
+        formatted_lines = []
+        for key, value in data.items():
+            formatted_lines.append(f"{key.ljust(20)}: {value}")
+        return "\n".join(formatted_lines)
+        
     def print_route_sheets(self):
-        """
-        Print all generated route sheets, restricting the print range to A1:K44
-        and ensuring it fits on one page.
-        """
-        excel = win32com.client.Dispatch("Excel.Application")
-        excel.Visible = False
-
         try:
+            self.status_label.configure(
+                text="⏳ Printing route sheets...",
+                text_color="#2563EB"
+            )
+            self.root.update()
+            
+            excel = win32com.client.Dispatch("Excel.Application")
+            excel.Visible = False
+            
             for file in self.generated_files:
                 workbook = excel.Workbooks.Open(file)
                 sheet = workbook.Sheets(1)
-
-                # Set the print area and fit to page
+                
                 sheet.PageSetup.PrintArea = "A1:K44"
                 sheet.PageSetup.Zoom = False
                 sheet.PageSetup.FitToPagesWide = 1
                 sheet.PageSetup.FitToPagesTall = 1
-
-                # Print the sheet
+                
                 workbook.PrintOut()
                 workbook.Close(SaveChanges=False)
-
-            messagebox.showinfo("Success", "All route sheets have been printed successfully!")
-
-        except Exception as e:
-            messagebox.showerror("Error", f"Failed to print route sheets: {str(e)}")
-
-        finally:
+                
             excel.Quit()
-
+            
+            self.status_label.configure(
+                text="✅ All route sheets printed successfully",
+                text_color="#059669"
+            )
+            
+        except Exception as e:
+            self.status_label.configure(
+                text="❌ Print error",
+                text_color="#DC2626"
+            )
+            messagebox.showerror("Error", f"Failed to print route sheets: {str(e)}")
+            
     def run(self):
         self.root.mainloop()
 
-
 if __name__ == "__main__":
-    app = RouteSheetApp()
+    app = ModernRouteSheetApp()
     app.run()

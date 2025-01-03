@@ -2156,3 +2156,437 @@
 2024-12-31 13:31:20,119 - INFO - Updating E4 with the unit type based on program.
 2024-12-31 13:31:20,119 - INFO - Mapping prices to the correct cells.
 2024-12-31 13:31:20,165 - INFO - Route sheet successfully updated and saved to C:\Users\JohnKenny\OneDrive - Pathway to Adventure Council\Desktop\automate\assets\Route_Sheet_Tri-Star_965_12-01-2024.xlsx.
+2025-01-02 10:02:52,471 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:02:52,490 - INFO - Loading image file.
+2025-01-02 10:02:52,516 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:02:52,516 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:02:52,516 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:02:52,516 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:02:52,516 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:02:52,516 - INFO - Preprocessing image for OCR.
+2025-01-02 10:02:52,534 - INFO - Image preprocessing complete.
+2025-01-02 10:02:52,552 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_h2jcckc0_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_h2jcckc0', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:02:52,575 - ERROR - Error processing receipt: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-01-02 10:03:25,996 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:03:25,996 - INFO - Loading image file.
+2025-01-02 10:03:25,997 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:03:25,997 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:03:25,997 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:03:25,997 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:03:25,997 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:03:25,997 - INFO - Preprocessing image for OCR.
+2025-01-02 10:03:26,016 - INFO - Image preprocessing complete.
+2025-01-02 10:03:26,034 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_sjnhgply_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_sjnhgply', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:03:26,041 - ERROR - Error processing receipt: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-01-02 10:19:19,146 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:19:19,146 - INFO - Loading image file.
+2025-01-02 10:19:19,153 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:19:19,154 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:19:19,154 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:19:19,154 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:19:19,154 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:19:19,154 - INFO - Preprocessing image for OCR.
+2025-01-02 10:19:19,173 - INFO - Image preprocessing complete.
+2025-01-02 10:19:19,191 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_b16j5z2y_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_b16j5z2y', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:19:19,244 - ERROR - Error processing receipt: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-01-02 10:19:54,476 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:19:54,476 - INFO - Loading image file.
+2025-01-02 10:19:54,482 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:19:54,482 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:19:54,482 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:19:54,482 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:19:54,482 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:19:54,482 - INFO - Preprocessing image for OCR.
+2025-01-02 10:19:54,500 - INFO - Image preprocessing complete.
+2025-01-02 10:19:54,518 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_oo2fjq1t_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_oo2fjq1t', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:19:55,054 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 10:19:55,054 - INFO - Processing OCR lines for data extraction.
+2025-01-02 10:19:55,054 - DEBUG - Processing line: Scouting america
+2025-01-02 10:19:55,054 - DEBUG - Processing line: 
+2025-01-02 10:19:55,054 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 10:19:55,054 - DEBUG - Processing line: 
+2025-01-02 10:19:55,054 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 312-421-8800
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 10:19:55,055 - INFO - Matched price line: youth bl (21)
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 10:19:55,055 - INFO - Matched price line: youth program fee (19)
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 10:19:55,055 - INFO - Matched price line: youth renewal (19)
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 10:19:55,055 - INFO - Matched price line: adult renewal (17)
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 10:19:55,055 - INFO - Matched price line: adult program fee (17)
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Total 3467.00
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 10:19:55,055 - INFO - Matched local unit number: 865
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 10:19:55,055 - INFO - Matched district: Tri-Star (7)
+2025-01-02 10:19:55,055 - INFO - Matched local unit number: 965
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 10:19:55,055 - INFO - Matched local unit number: 965
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Customer Signature
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: TX# 10178
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 
+2025-01-02 10:19:55,055 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 10:19:55,056 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 10:20:52,709 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:20:52,709 - INFO - Loading image file.
+2025-01-02 10:20:52,716 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:20:52,716 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:20:52,716 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:20:52,716 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:20:52,716 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:20:52,716 - INFO - Preprocessing image for OCR.
+2025-01-02 10:20:52,734 - INFO - Image preprocessing complete.
+2025-01-02 10:20:52,752 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_qalwx7cx_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_qalwx7cx', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:20:53,022 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 10:20:53,022 - INFO - Processing OCR lines for data extraction.
+2025-01-02 10:20:53,022 - DEBUG - Processing line: Scouting america
+2025-01-02 10:20:53,022 - DEBUG - Processing line: 
+2025-01-02 10:20:53,022 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 10:20:53,022 - DEBUG - Processing line: 
+2025-01-02 10:20:53,022 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 10:20:53,022 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 10:20:53,022 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 312-421-8800
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 10:20:53,023 - INFO - Matched price line: youth bl (21)
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 10:20:53,023 - INFO - Matched price line: youth program fee (19)
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 10:20:53,023 - INFO - Matched price line: youth renewal (19)
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 10:20:53,023 - INFO - Matched price line: adult renewal (17)
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 10:20:53,023 - INFO - Matched price line: adult program fee (17)
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Total 3467.00
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 10:20:53,023 - INFO - Matched local unit number: 865
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 10:20:53,023 - INFO - Matched district: Tri-Star (7)
+2025-01-02 10:20:53,023 - INFO - Matched local unit number: 965
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 10:20:53,023 - INFO - Matched local unit number: 965
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Customer Signature
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: TX# 10178
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 
+2025-01-02 10:20:53,023 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 10:20:53,024 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 10:20:53,056 - INFO - Updating E4 with the unit type based on program.
+2025-01-02 10:20:53,056 - INFO - Mapping prices to the correct cells.
+2025-01-02 10:22:02,813 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:22:02,813 - INFO - Loading image file.
+2025-01-02 10:22:02,821 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:22:02,821 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:22:02,821 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:22:02,821 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:22:02,821 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:22:02,821 - INFO - Preprocessing image for OCR.
+2025-01-02 10:22:02,839 - INFO - Image preprocessing complete.
+2025-01-02 10:22:02,857 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_eck7xmmy_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_eck7xmmy', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:22:03,141 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 10:22:03,141 - INFO - Processing OCR lines for data extraction.
+2025-01-02 10:22:03,141 - DEBUG - Processing line: Scouting america
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 
+2025-01-02 10:22:03,141 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 
+2025-01-02 10:22:03,141 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 10:22:03,141 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 312-421-8800
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 10:22:03,141 - INFO - Matched price line: youth bl (21)
+2025-01-02 10:22:03,141 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 10:22:03,143 - INFO - Matched price line: youth program fee (19)
+2025-01-02 10:22:03,143 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 10:22:03,143 - INFO - Matched price line: youth renewal (19)
+2025-01-02 10:22:03,143 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 10:22:03,143 - INFO - Matched price line: adult renewal (17)
+2025-01-02 10:22:03,143 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 10:22:03,143 - INFO - Matched price line: adult program fee (17)
+2025-01-02 10:22:03,143 - DEBUG - Processing line: 
+2025-01-02 10:22:03,143 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 10:22:03,143 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 10:22:03,143 - DEBUG - Processing line: Total 3467.00
+2025-01-02 10:22:03,143 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 10:22:03,143 - DEBUG - Processing line: 
+2025-01-02 10:22:03,143 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 10:22:03,144 - INFO - Matched local unit number: 865
+2025-01-02 10:22:03,144 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 10:22:03,144 - INFO - Matched district: Tri-Star (7)
+2025-01-02 10:22:03,144 - INFO - Matched local unit number: 965
+2025-01-02 10:22:03,144 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 10:22:03,144 - INFO - Matched local unit number: 965
+2025-01-02 10:22:03,144 - DEBUG - Processing line: 
+2025-01-02 10:22:03,144 - DEBUG - Processing line: Customer Signature
+2025-01-02 10:22:03,144 - DEBUG - Processing line: 
+2025-01-02 10:22:03,144 - DEBUG - Processing line: TX# 10178
+2025-01-02 10:22:03,144 - DEBUG - Processing line: 
+2025-01-02 10:22:03,144 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 10:22:03,144 - DEBUG - Processing line: 
+2025-01-02 10:22:03,144 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 10:22:03,144 - DEBUG - Processing line: 
+2025-01-02 10:22:03,144 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 10:22:03,144 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 10:22:03,176 - INFO - Updating E4 with the unit type based on program.
+2025-01-02 10:22:03,176 - INFO - Mapping prices to the correct cells.
+2025-01-02 10:23:48,440 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:23:48,441 - INFO - Loading image file.
+2025-01-02 10:23:48,448 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:23:48,448 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:23:48,448 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:23:48,448 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:23:48,448 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:23:48,448 - INFO - Preprocessing image for OCR.
+2025-01-02 10:23:48,465 - INFO - Image preprocessing complete.
+2025-01-02 10:23:48,485 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_5fmxi8yj_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_5fmxi8yj', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:23:48,768 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 10:23:48,768 - INFO - Processing OCR lines for data extraction.
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Scouting america
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 312-421-8800
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 10:23:48,768 - INFO - Matched price line: youth bl (21)
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 10:23:48,768 - INFO - Matched price line: youth program fee (19)
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 10:23:48,768 - INFO - Matched price line: youth renewal (19)
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 10:23:48,768 - INFO - Matched price line: adult renewal (17)
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 10:23:48,768 - INFO - Matched price line: adult program fee (17)
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Total 3467.00
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 10:23:48,768 - DEBUG - Processing line: 
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 10:23:48,768 - INFO - Matched local unit number: 865
+2025-01-02 10:23:48,768 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 10:23:48,769 - INFO - Matched district: Tri-Star (7)
+2025-01-02 10:23:48,769 - INFO - Matched local unit number: 965
+2025-01-02 10:23:48,769 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 10:23:48,769 - INFO - Matched local unit number: 965
+2025-01-02 10:23:48,769 - DEBUG - Processing line: 
+2025-01-02 10:23:48,769 - DEBUG - Processing line: Customer Signature
+2025-01-02 10:23:48,769 - DEBUG - Processing line: 
+2025-01-02 10:23:48,769 - DEBUG - Processing line: TX# 10178
+2025-01-02 10:23:48,769 - DEBUG - Processing line: 
+2025-01-02 10:23:48,769 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 10:23:48,769 - DEBUG - Processing line: 
+2025-01-02 10:23:48,769 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 10:23:48,769 - DEBUG - Processing line: 
+2025-01-02 10:23:48,769 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 10:23:48,769 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 10:23:48,799 - INFO - Updating E4 with the unit type based on program.
+2025-01-02 10:23:48,800 - INFO - Mapping prices to the correct cells.
+2025-01-02 10:23:48,817 - INFO - Route sheet successfully updated and saved to Z:\johnv\routesheetassistant\assets\Route_Sheet_Tri-Star_965_01-01-2025.xlsx.
+2025-01-02 10:24:40,794 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 10:24:40,794 - INFO - Loading image file.
+2025-01-02 10:24:40,796 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 10:24:40,796 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 10:24:40,796 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 10:24:40,796 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 10:24:40,796 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 10:24:40,796 - INFO - Preprocessing image for OCR.
+2025-01-02 10:24:40,817 - INFO - Image preprocessing complete.
+2025-01-02 10:24:40,834 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_i2ydf0gc_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_i2ydf0gc', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 10:24:41,120 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 10:24:41,120 - INFO - Processing OCR lines for data extraction.
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Scouting america
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 312-421-8800
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 10:24:41,120 - INFO - Matched price line: youth bl (21)
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 10:24:41,120 - INFO - Matched price line: youth program fee (19)
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 10:24:41,120 - INFO - Matched price line: youth renewal (19)
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 10:24:41,120 - INFO - Matched price line: adult renewal (17)
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 10:24:41,120 - INFO - Matched price line: adult program fee (17)
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Total 3467.00
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 10:24:41,120 - INFO - Matched local unit number: 865
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 10:24:41,120 - INFO - Matched district: Tri-Star (7)
+2025-01-02 10:24:41,120 - INFO - Matched local unit number: 965
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 10:24:41,120 - INFO - Matched local unit number: 965
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Customer Signature
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: TX# 10178
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 
+2025-01-02 10:24:41,120 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 10:24:41,121 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 10:24:41,155 - INFO - Updating E4 with the unit type based on program.
+2025-01-02 10:24:41,155 - INFO - Mapping prices to the correct cells.
+2025-01-02 10:24:41,165 - INFO - Route sheet successfully updated and saved to Z:\johnv\routesheetassistant\assets\Route_Sheet_Tri-Star_965_01-01-2025.xlsx.
+2025-01-02 11:05:37,279 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 11:05:37,279 - INFO - Loading image file.
+2025-01-02 11:05:37,314 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 11:05:37,314 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 11:05:37,314 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 11:05:37,314 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 11:05:37,314 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 11:05:37,314 - INFO - Preprocessing image for OCR.
+2025-01-02 11:05:37,332 - INFO - Image preprocessing complete.
+2025-01-02 11:05:37,350 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_8u5pkisk_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_8u5pkisk', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 11:05:37,699 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 11:05:37,699 - INFO - Processing OCR lines for data extraction.
+2025-01-02 11:05:37,699 - DEBUG - Processing line: Scouting america
+2025-01-02 11:05:37,699 - DEBUG - Processing line: 
+2025-01-02 11:05:37,699 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 11:05:37,699 - DEBUG - Processing line: 
+2025-01-02 11:05:37,699 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 11:05:37,699 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 312-421-8800
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 11:05:37,700 - INFO - Matched price line: youth bl (21)
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 11:05:37,700 - INFO - Matched price line: youth program fee (19)
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 11:05:37,700 - INFO - Matched price line: youth renewal (19)
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 11:05:37,700 - INFO - Matched price line: adult renewal (17)
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 11:05:37,700 - INFO - Matched price line: adult program fee (17)
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Total 3467.00
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 11:05:37,700 - INFO - Matched local unit number: 865
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 11:05:37,700 - INFO - Matched district: Tri-Star (7)
+2025-01-02 11:05:37,700 - INFO - Matched local unit number: 965
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 11:05:37,700 - INFO - Matched local unit number: 965
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Customer Signature
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: TX# 10178
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 
+2025-01-02 11:05:37,700 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 11:05:37,701 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 11:05:37,742 - INFO - Updating E4 with the unit type based on program.
+2025-01-02 11:05:37,742 - INFO - Mapping prices to the correct cells.
+2025-01-02 11:05:37,753 - INFO - Route sheet successfully updated and saved to Z:\johnv\routesheetassistant\assets\Route_Sheet_Tri-Star_965_01-01-2025.xlsx.
+2025-01-02 16:54:22,765 - INFO - Processing receipt: C:/Users/johnv/Downloads/route.png
+2025-01-02 16:54:22,766 - INFO - Loading image file.
+2025-01-02 16:54:22,781 - DEBUG - STREAM b'IHDR' 16 13
+2025-01-02 16:54:22,781 - DEBUG - STREAM b'sRGB' 41 1
+2025-01-02 16:54:22,781 - DEBUG - STREAM b'gAMA' 54 4
+2025-01-02 16:54:22,781 - DEBUG - STREAM b'pHYs' 70 9
+2025-01-02 16:54:22,781 - DEBUG - STREAM b'IDAT' 91 65445
+2025-01-02 16:54:22,781 - INFO - Preprocessing image for OCR.
+2025-01-02 16:54:22,801 - INFO - Image preprocessing complete.
+2025-01-02 16:54:22,819 - DEBUG - ['tesseract', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_bh6_fmxb_input.PNG', 'C:\\Users\\johnv\\AppData\\Local\\Temp\\tess_bh6_fmxb', '-l', 'eng', '--psm', '4', 'txt']
+2025-01-02 16:54:23,245 - DEBUG - OCR output saved to raw_ocr_output.txt.
+2025-01-02 16:54:23,245 - INFO - Processing OCR lines for data extraction.
+2025-01-02 16:54:23,245 - DEBUG - Processing line: Scouting america
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Pathway to Adventure Council
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Arlington Heights Center for Scouting
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 617 E Golf Rd
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Heights, IL 60005
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 312-421-8800
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 1 S0965 B BSA Registration for December 2024 3467.00
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 21 Youth BL x $15.00 (315.00)
+2025-01-02 16:54:23,246 - INFO - Matched price line: youth bl (21)
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 19 Youth Program Fee x $12.00 (228.00)
+2025-01-02 16:54:23,246 - INFO - Matched price line: youth program fee (19)
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 19 Youth Renewal x $85.00 (1615.00)
+2025-01-02 16:54:23,246 - INFO - Matched price line: youth renewal (19)
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 17 Adult Renewal x $65.00 (1105.00)
+2025-01-02 16:54:23,246 - INFO - Matched price line: adult renewal (17)
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 17 Adult Program Fee x $12.00 (204.00)
+2025-01-02 16:54:23,246 - INFO - Matched price line: adult program fee (17)
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Subtotal 3467.00
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Tax 6.25% 0.00
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Total 3467.00
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Check #6031 3467.00
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Catholic Bishop of Chicago St Juliana Boy Scout Troop 865
+2025-01-02 16:54:23,246 - INFO - Matched local unit number: 865
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Tri-Star Troop 965 B Balance: $0.00
+2025-01-02 16:54:23,246 - INFO - Matched district: Tri-Star (7)
+2025-01-02 16:54:23,246 - INFO - Matched local unit number: 965
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Customer: TRI Troop 965 - member renewal - 19 youth and 17 adult
+2025-01-02 16:54:23,246 - INFO - Matched local unit number: 965
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Customer Signature
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: TX# 10178
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: TRI T965 - member renewal 19 youth and 17 adults
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: Thank You For Shopping With Us!!
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 
+2025-01-02 16:54:23,246 - DEBUG - Processing line: 12/26/2024 09:42:40 Kathy Daloia
+2025-01-02 16:54:23,247 - INFO - Data successfully extracted and saved to JSON.
+2025-01-02 16:54:23,284 - INFO - Updating E4 with the unit type based on program.
+2025-01-02 16:54:23,285 - INFO - Mapping prices to the correct cells.
+2025-01-02 16:54:23,316 - INFO - Route sheet successfully updated and saved to Z:\johnv\routesheetassistant\assets\Route_Sheet_Tri-Star_965_01-01-2025.xlsx.
